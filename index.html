@@ -20,34 +20,25 @@
   </header>
   <!-- début de la navbar -->
   <div class="container-fluid navbar navbar0 d-flex justify-content-between bg-light sticky-top">
-    <!-- début bouton 0 -->
-    <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand" href="#">Accueil</a>
-      <button class="navbar-toggler" type="button"></button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <a class="navbar-brand sticky-top" href="#">Accueil</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </nav>
-    <!-- fin bouton 0 -->
-    <!-- début bouton 1 -->
-    <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand" href="#canvasPresentation">Présentation</a>
-      <button class="navbar-toggler" type="button"></button>
-      <span class="navbar-toggler-icon"></span>
-    </nav>
-    <!-- fin bouton 1 -->
-    <!-- fin bouton 2 -->
-    <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand" href="#canvas">Etudes & formation</a>
-      <button class="navbar-toggler" type="button"></button>
-      <span class="navbar-toggler-icon"></span>
-    </nav>
-    <!-- fin bouton 2 -->
-    <!-- début bouton 3 -->
-    <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand" href="#canvasExpérience">Expérience</a>
-      <button class="navbar-toggler" type="button"></button>
-      <span class="navbar-toggler-icon"></span>
-    </nav>
-    <!-- fin bouton 3 -->
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#canvasPresentation">Présentation <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#canvas">Etudes & formation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#canvasExpérience">Expérience</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </div>
 <canvas id="canvasPresentation" width="1250" height="20"></canvas>
 <!-- fin de la navbar -->
